@@ -45,14 +45,12 @@ public class ProgramTumpukan
 	{
 		for(int i = batasAtas; i >= 0; i--)
 		{
-			if(i < 0)
-				System.out.println("null");
-			else
+			if(i >= 0)
 			{
 				tumpukan[i] = null;
-				atas = atas - 1;
 			}
 		}
+		atas = -1;
 	}
 	
 	public static void main(String[] args)
